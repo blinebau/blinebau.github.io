@@ -1,0 +1,138 @@
+/* 
+CSS
+
+For self-benefit separating CSS styling per selector into different rules based on intent 
+ie. (Positioning & Font-styling == Different Rules) combine later. */
+
+/* External Font from Google Fonts: Raleway */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body
+
+body {
+	margin: 0 auto;
+}
+
+/* Content Font Style */
+body {
+	color: #555; /* Lighter shade of black */
+	font-family: "Raleway", sans-serif, Arial;
+	font-style: normal;
+	font-weight: 300;
+}
+
+/* Content Text Spacing */
+body {
+	line-height: 1.5;
+	padding: 0;
+}
+
+/* Main Content Body Style */
+main {
+	display: block;
+	margin-top: 50%;
+	padding-top: 1em;
+}
+
+strong {
+	font-size: 1.5em;
+	font-weight: 2em;
+}
+
+/* Content Heading Spacing */
+section h2 {
+	margin-top: 1em;
+	padding-top: 1em;
+}
+
+/* Content Internals Style */
+section {
+	//background-color: #eee;
+}
+
+section {
+	max-width: 50em;
+	margin: 0 auto;
+	width: 100%;
+	padding: 2px 4px;
+	vertical-align: text-bottom;
+	display: block;
+}
+
+/* Header Text Style */
+header > h1, header > p {
+	color: #ffffff;
+	font-size: 36px;
+	font-weight: 600;
+	text-align: center;
+	line-height: 1.2;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    padding-bottom: 5px;
+    margin-bottom: 1.5em;
+}
+
+header {
+	    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header ID Styling
+header {
+	background: url(assets/bck-img.jpg) no-repeat center center fixed;
+    background-size: cover;
+	padding: 10vw 2em;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: block;
+}
+*/
+
+#name {
+	border-bottom: .5px solid #ffffff;
+}
+
+#subtitle {
+	font-style: italic;
+	font-size: 20px;
+	font-weight: 300;
+    margin-top: 2.5em;
+    left: 40%;
+}
+
+/* Content Section Label General Font Style */
+.content_label {
+	font-size: 24px;
+	font-weight: 400px;
+	color: #333; /* Darker Shade of Black */
+	text-decoration: underline;
+	text-align: center;
+}
+
+.content_label {
+	margin-bottom: 1em;
+}
+
+#self-statement {
+	margin-bottom: .5em;
+}
+
+#self-statement {
+	text-align: center;
+	font-weight: 150;
+	font-style: italic;
+}
+
+#about {
+	display: block;
+}
