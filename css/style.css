@@ -7,7 +7,9 @@ ie. (Positioning & Font-styling == Different Rules) combine later. */
 /* External Font from Google Fonts: Raleway */
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-body
+body, html {
+	height: 100%;
+}
 
 body {
 	margin: 0 auto;
@@ -30,13 +32,22 @@ body {
 /* Main Content Body Style */
 main {
 	display: block;
-	margin-top: 50%;
 	padding-top: 1em;
 }
 
 strong {
-	font-size: 1.5em;
+	font-size: 1em;
 	font-weight: 2em;
+}
+
+h3 {
+	font-size: 26px;
+	font-weight: 250;
+	color: #399932;
+}
+
+h5 {
+	font-weight: bold;
 }
 
 /* Content Heading Spacing */
@@ -73,18 +84,21 @@ header > h1, header > p {
     margin-bottom: 1.5em;
 }
 
+/* Header ID Styling - Landing Page */
 header {
-	    /* Full height */
+	/* Full height */
     height: 100%; 
-
     /* Create the parallax scrolling effect */
+    background-image: url(assets/bck-img.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom: .5px solid black;
 }
 
-/* Header ID Styling
+
+/* Header ID Styling (OLD)
 header {
 	background: url(assets/bck-img.jpg) no-repeat center center fixed;
     background-size: cover;
@@ -97,6 +111,14 @@ header {
 	display: block;
 }
 */
+
+#self {
+	border-radius: 10%;
+	border: 3px solid #399932;
+	left: 50%;
+	position: absolute;
+}
+
 
 #name {
 	border-bottom: .5px solid #ffffff;
@@ -112,27 +134,42 @@ header {
 
 /* Content Section Label General Font Style */
 .content_label {
-	font-size: 24px;
+	font-size: 40px;
 	font-weight: 400px;
-	color: #333; /* Darker Shade of Black */
-	text-decoration: underline;
+	color: #399932; /* Darker Shade of Black */
 	text-align: center;
 }
 
 .content_label {
-	margin-bottom: 1em;
+	margin-bottom: .1em;
 }
 
-#self-statement {
-	margin-bottom: .5em;
+#self_statement {
+	margin-top: 0;
+	margin-bottom: 1.5em;
+	padding-top: .8em;
+	padding-bottom: 2.5em;
+	border-bottom: .8px solid #555;
 }
 
-#self-statement {
+#self_statement {
 	text-align: center;
 	font-weight: 150;
 	font-style: italic;
 }
 
+#intro_brief {
+	width: 45%;
+	float: left;
+}
+
+#personal_brief {
+	width: 45%;
+	float: right;
+}
+
 #about {
 	display: block;
+	text-align: center;
+	overflow: auto;
 }
