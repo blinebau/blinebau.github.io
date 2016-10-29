@@ -7,14 +7,27 @@
 		<meta name="description" content="self portfolio">
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://use.fontawesome.com/aae7278461.js"></script>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.5/jquery.scrollify.js"></script>
+		<script src="js/script.js"></script>
 	</head>
 	<body>
-		<header>
-			<h1 id="name">Bryan Linebaugh</h1>
-			<p id="subtitle">Developer's Portfolio</p>
-		</header>
+		<section data-section-name="landing-section" id="landing">
+			<header>
+				<h1 id="name">Bryan Linebaugh</h1>
+				<p id="subtitle">Developer's Portfolio</p>
+				<a href="#about-section" id="scroll-down"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+			</header>
+		</section>
 		<main>
-			<section id="about">
+			<ul id="side_nav">
+				<li><a href="#about-section">About me</a></li>
+				<li><a href="#experience-section">Experiences</a></li>
+				<li><a href="#projects-section">Projects</a></li>
+				<li><a href="#contact-section">Contact</a></li>
+			</ul>
+			<section data-section-name="about-section" class="content" id="about">
 				<h2 class="content_label"> About me </h2>
 
 				<h4 id="self_statement">I'm an aspiring software developer.</h4>
@@ -32,8 +45,7 @@
 					<p><h5>Location:</h5> Tustin, CA</p>
 				</div>
 			</section>
-
-			<section id="experience">
+			<section data-section-name="experience-section" class="content" id="experience">
 				<h2 class="content_label">Languages</h2>
 				<ul>
 					<li>Java</li>
@@ -51,15 +63,14 @@
 					<li>Ruby on Rails</li>
 				</ul>
 			</section>
-
 			<!-- Projects,Skills,... -->
-			<section id="projects">
+			<section data-section-name="projects-section" class="content" id="projects">
 				<h2 class="content_label">Projects</h2>
 			</section>
 		</main>
 			
 		<footer>
-			<section id="contact">
+			<section data-section-name="contact-section" class="content" id="contact">
 			</section>
 		</footer>
 

@@ -56,16 +56,10 @@ section h2 {
 	padding-top: 1em;
 }
 
-/* Content Internals Style */
-section {
-	//background-color: #eee;
-}
-
-section {
+.content {
 	max-width: 50em;
 	margin: 0 auto;
 	width: 100%;
-	padding: 2px 4px;
 	vertical-align: text-bottom;
 	display: block;
 }
@@ -111,6 +105,48 @@ header {
 	display: block;
 }
 */
+
+#scroll-down {
+	height: 80px;
+	width: 120px;
+	position: absolute;
+	display: block;
+	bottom: 0;
+	right: 5%;
+	background-color: rgba(0, 0, 0, .45);
+	text-align: center;
+	z-index: 6;
+}
+
+.fa-arrow-down {
+	color: white;
+	font-size: 2em !important;
+	padding-top: 20%;
+}
+
+#side_nav {
+	height: 300px;
+	width: 120px;
+	position: absolute;
+	display: block;
+	top: 100%;
+	right: 5%;
+	background-color: #222222;
+	z-index: 99; 
+	text-align: center;
+}
+
+#side_nav li {
+	color: #ffffff;
+	font-size: 18px;
+	display: block;
+	height: 80px;
+	float: none;
+}
+
+#side_nav:first-child {
+	padding-top: 40px;
+}
 
 #self {
 	border-radius: 10%;
