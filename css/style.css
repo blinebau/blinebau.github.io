@@ -40,6 +40,10 @@ strong {
 	font-weight: 2em;
 }
 
+h1 {
+	text-align: center;
+}
+
 h3 {
 	font-size: 26px;
 	font-weight: 250;
@@ -73,13 +77,8 @@ header > h1, header > p {
 	color: #ffffff;
 	font-size: 36px;
 	font-weight: 600;
-	text-align: center;
 	line-height: 1.2;
-    position: absolute;
-    top: 40%;
-    left: 40%;
-    padding-bottom: 5px;
-    margin-bottom: 1.5em;
+
 }
 
 /* Header ID Styling - Landing Page */
@@ -91,7 +90,7 @@ header {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+	background-size: cover;
     border-bottom: .5px solid black;
 }
 
@@ -137,9 +136,12 @@ header {
 	display: block;
 	top: 100%;
 	right: 5%;
-	background-color: #222222;
+	background-color: #ffffff;
 	z-index: 99; 
 	text-align: center;
+	border-left: 1.5px solid rgba(114, 120, 120, 0.5); 
+	border-bottom: 1.5px solid rgba(114, 120, 120, 0.5);
+	border-right: 1.5px solid rgba(114, 120, 120, 0.5);
 }
 
 #nav_links li{
@@ -150,7 +152,7 @@ header {
 }
 
 #nav_links li a {
-	color: #ffffff;
+	color: #222222;
 	text-decoration: none;
 }
 
@@ -165,17 +167,29 @@ header {
 	position: absolute;
 }
 
-
 #name {
+	max-width: 500px;
+	font-size: 58px;
+	font-weight: 600;
+	padding-bottom: 5px;
 	border-bottom: .5px solid #ffffff;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 
 #subtitle {
 	font-style: italic;
-	font-size: 20px;
+	font-size: 26px;
 	font-weight: 300;
-    margin-top: 2.5em;
-    left: 40%;
+	position: absolute;
+    top: 57%;
+    left: 50%;
+    margin-right: -50%;
+    margin-top: 5px;
+    transform: translate(-50%, -50%);
 }
 
 /* Content Section Label General Font Style */
@@ -192,11 +206,15 @@ header {
 
 #self_statement {
 	margin-top: 0;
-	margin-bottom: 1.5em;
 	padding-top: .8em;
-	padding-bottom: 2.5em;
-	border-bottom: .8px solid #555;
 }
+
+hr { 
+	margin: 40px 0px; 
+	border-color: #727878; 
+	opacity: 0.2;  
+}
+
 
 #self_statement {
 	text-align: center;
@@ -220,7 +238,7 @@ header {
 	overflow: auto;
 }
 
-@media screen and (max-device-width: 767px) {
+/*@media screen and (max-device-width: 768px){
 	#scroll-down {
 		width: 100%;
 		right: 0;
@@ -231,15 +249,75 @@ header {
 		width: 100%;
 		position: fixed;
 		right: 0;
-		padding: 6px 0 10px 0;
+		padding: 20px 0 10px 0;
+		border-bottom: 1px solid rgba(114, 120, 120, 0.2);
 	}
 
-	#nav_links li{
+	#nav_links li {
 		display: inline;
 		height: 70px;
 	}
 
-	#nav_links > li:first-child {
-
+	#nav_links li a {
+		margin-left: 50px;
+		padding-right: 50px;
+		border-right: .5px solid rgba(114, 120, 120, 0.2);
 	}
+
+	#nav_links li:first-child {
+		//margin-left: -70px;
+		margin-right: 10px;
+		left: 2%;
+	}
+
+	#nav_links li:last-child a {
+		border-right: none;
+		margin-left: 60px;
+		right: 2%;
+	}
+}*/
+
+@media screen and (min-width: 980px) /* Desktop */ {
+}
+
+@media screen  and (max-width: 979px) /* Tablet */ {
+	#scroll-down {
+		width: 100%;
+		right: 0;
+	}	
+
+	#nav_links {
+		height: 20px;
+		width: 100%;
+		position: fixed;
+		right: 0;
+		padding: 20px 0 10px 0;
+		border-bottom: 1px solid rgba(114, 120, 120, 0.2);
+	}
+
+	#nav_links li {
+		display: inline;
+		height: 70px;
+	}
+
+	#nav_links li a {
+		margin-left: 50px;
+		padding-right: 50px;
+		border-right: .5px solid rgba(114, 120, 120, 0.2);
+	}
+
+	#nav_links li:first-child {
+		//margin-left: -70px;
+		margin-right: 10px;
+		left: 2%;
+	}
+
+	#nav_links li:last-child a {
+		border-right: none;
+		margin-left: 60px;
+		right: 2%;
+	}
+}
+
+@media screen and (max-width: 500px) /* Mobile */ {
 }
