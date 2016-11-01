@@ -19,24 +19,27 @@ $(document).ready(function()
 		afterRender:function() {}
 	});
 		
-
 	$('#scroll-down').on('click', function(event) {
 		event.preventDefault();
 		$.scrollify.move("#about-section");
-		//console.log(href);
 	});
 
-	$('#side_nav').on('click', 'a', function(event) {
+	$('#nav_links').on('click', 'a', function(event) {
 		event.preventDefault();
 		var ref = $(this).attr('href');
 		$.scrollify.move(ref);
 	});
 
-/*?	$('.a_nav').click(function(e) {
-		console.log(this);
-		// do work here
-		// extrat href
-		// nav to href
-	})*/
+	var navOffset = $('#nav_links').offset().top;
+
+	$(window).scroll(function() {
+		if($(window).scrollTop() > navOffset) {
+			$('#nav_links').css({ position: 'fixed', top: '0'});
+		}
+		if($(window).scrollTop() < navOffset) {
+			$('#nav_links').css({ position: 'absolute', top: '100%'});
+		}
+	});
+
 });
 

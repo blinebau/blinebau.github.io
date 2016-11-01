@@ -50,6 +50,10 @@ h5 {
 	font-weight: bold;
 }
 
+i {
+	margin: 0 auto;
+}
+
 /* Content Heading Spacing */
 section h2 {
 	margin-top: 1em;
@@ -120,11 +124,13 @@ header {
 
 .fa-arrow-down {
 	color: white;
-	font-size: 2em !important;
-	padding-top: 20%;
+	font-size: 30px !important;
+	padding-top: 20px;
+	padding-right: 2px;
+	text-align: center;
 }
 
-#side_nav {
+#nav_links {
 	height: 300px;
 	width: 120px;
 	position: absolute;
@@ -136,16 +142,20 @@ header {
 	text-align: center;
 }
 
-#side_nav li {
-	color: #ffffff;
+#nav_links li{
 	font-size: 18px;
 	display: block;
 	height: 80px;
 	float: none;
 }
 
-#side_nav:first-child {
-	padding-top: 40px;
+#nav_links li a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#nav_links > li:first-child {
+	padding-top: 16px;
 }
 
 #self {
@@ -208,4 +218,28 @@ header {
 	display: block;
 	text-align: center;
 	overflow: auto;
+}
+
+@media screen and (max-device-width: 767px) {
+	#scroll-down {
+		width: 100%;
+		right: 0;
+	}	
+
+	#nav_links {
+		height: 20px;
+		width: 100%;
+		position: fixed;
+		right: 0;
+		padding: 6px 0 10px 0;
+	}
+
+	#nav_links li{
+		display: inline;
+		height: 70px;
+	}
+
+	#nav_links > li:first-child {
+
+	}
 }
