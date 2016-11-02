@@ -41,5 +41,9 @@ $(document).ready(function()
 		}
 	});
 
+	$('#hamburger-nav').on('click', function(event) {
+		event.preventDefault();
+		$('#nav_links').toggleClass('toggle')
+	})
 });
 
