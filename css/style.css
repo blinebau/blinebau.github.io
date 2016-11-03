@@ -20,7 +20,7 @@ body, html {
 
 body {
 	margin: 0 auto;
-	background: #FFFFCC;
+	//background: #FFFFCC;
 }
 
 /* Content Font Style */
@@ -164,14 +164,14 @@ header {
 	text-align: center;
 }
 
-#self {
+/*#self {
 	max-width: 500px;
 	height: auto;
 	border-radius: 10%;
 	border: 3px solid #399932;
 	left: 50%;
 	position: absolute;
-}
+}*/
 
 /* Content Section Label General Font Style */
 .content_label {
@@ -217,8 +217,17 @@ hr {
 #about {
 	display: block;
 	text-align: center;
-	padding: 4em 4em 0em 4em;
+	padding: 7em 4em 0em 4em;
 /*	overflow: auto;*/
+}
+
+#image_center img {
+	display: inline;
+	width: 100%;
+	height: auto;
+	vertical-align: middle;
+	max-width: 125px;
+	border: 10px solid rgba(226, 226, 172, .6);
 }
 
 #scroll-down {
@@ -275,6 +284,7 @@ hr {
 	padding: 0;
 	overflow: hidden;
 	background-color: #ffffff;
+	border-bottom: .5px solid rgba(0,0,0,0.2);
 }
 
 #nav_links li {
@@ -330,6 +340,11 @@ hr {
 /* GRID LAYOUT */
 /* Thank you W3Schools! */
 
+.row {
+	width: 100%;
+	text-align: center;
+}
+
 /* Doesn't allow other elements to float into other columns */
 .row:after {
 	content: "";
@@ -350,7 +365,7 @@ hr {
 }
 
 /* W3Schools Column Styling and AlineApart */
-.col-1 {width: 8.33%;}
+/*.col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
 .col-4 {width: 33.33%;}
@@ -361,7 +376,7 @@ hr {
 .col-9 {width: 75%;}
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.col-12 {width: 100%;}*/
 
 /*@media screen and (min-width: 600px) {*/
 
