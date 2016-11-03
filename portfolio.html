@@ -21,7 +21,7 @@
 			</header>
 			<a href="#about-section" id="scroll-down"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
 		</section>
-		<main class="row">
+		<main>
 			<nav id="site-nav">
 <!-- 				<div class="mobile-nav">
 					<div></div>
@@ -36,25 +36,28 @@
 						<li><a href="#experience-section">Experiences</a></li>
 						<li><a href="#projects-section">Projects</a></li>
 						<li><a href="#contact-section">Contact</a></li>
-						<li id="hamburger-nav">&#9776;</li>
+						<li id="hamburger-nav"><span style="font-size: 1em;">&#9776;</span></li>
 					</ul>
 				</div>
 			</nav>
 			<section data-section-name="about-section" class="content" id="about">
 				<h2 class="content_label"> About me </h2>
 
-				<h4 id="self_statement">I'm an aspiring software developer.</h4>
+				<!-- <h4 id="self_statement">I'm an aspiring software developer.</h4> -->
 
 				<hr>
-
-				<img id="self" src="css/assets/self-img.jpg">
-				<div id="intro_brief">
-					<p><strong>I</strong> am a student of software engineering at <abbr title="University of California, Irvine">UCI</abbr>. I am interested in application level programming, and have recently began exploring web development. I love learning about the intricacies and unusual in programming and computer science.</p>
-				</div>
-				<div id="personal_brief">
-					<p><h5>Name:</h5> Bryan Linebaugh</p>
-					<p><h5>Age:</h5> 24</p>
-					<p><h5>Location:</h5> Tustin, CA</p>
+				<div class="row">
+					<div class="col-4" id="intro_brief">
+						<p><strong>I</strong> am a student of software engineering at <abbr title="University of California, Irvine">UCI</abbr>. I am interested in application level programming, and have recently began exploring web development. I love learning about the intricacies and unusual in programming and computer science.</p>
+					</div>
+					<div class="col-4" id="image_center">
+						<img id="self" src="css/assets/self-img.jpg">
+					</div>
+					<div class="col-4" id="personal_brief">
+						<p><h5>Name:</h5> Bryan Linebaugh</p>
+						<p><h5>Age:</h5> 24</p>
+						<p><h5>Location:</h5> Tustin, CA</p>
+					</div>
 				</div>
 			</section>
 			<section data-section-name="experience-section" class="content" id="experience">
@@ -66,7 +69,7 @@
 					<li>JavaScript</li>
 					<li>Ruby</li>
 				</ul>
-				<h2 class="content_label">Frameworks for Past Projects</h2>
+				<h2>Frameworks for Past Projects</h2>
 				<ul>
 					<li>
 						<h5>Spring Framework</h5>

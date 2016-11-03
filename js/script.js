@@ -30,13 +30,13 @@ $(document).ready(function()
 		$.scrollify.move(ref);
 	});
 
-	var navOffset = $('#nav_links').offset().top;
+	var navOffSet = $('#scroll-down').offset().top;
 
 	$(window).scroll(function() {
-		if($(window).scrollTop() > navOffset) {
+		if($(window).scrollTop() > navOffSet) {
 			$('#nav_links').css({ position: 'fixed', top: '0'});
 		}
-		if($(window).scrollTop() < navOffset) {
+		if($(window).scrollTop() < navOffSet) {
 			$('#nav_links').css({ position: 'absolute', top: '100%'});
 		}
 	});
