@@ -31,9 +31,10 @@ $(document).ready(function()
 		$.scrollify.move(ref);
 	});
 
-	var navOffSet = $('#scroll-down').offset().top;
+	var navOffSet = $('#about').offset().top;
 
 	$(window).scroll(function() {
+		console.log("ran");
 		if($(window).scrollTop() > navOffSet) {
 			$('#nav_links').css({ position: 'fixed', top: '0'});
 		}
@@ -47,4 +48,3 @@ $(document).ready(function()
 		$('#nav_links').toggleClass('toggle')
 	})
 });
-

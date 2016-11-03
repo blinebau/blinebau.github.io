@@ -356,7 +356,7 @@ hr {
 [class*="col-"] {
 	float: left;
 	padding: 15px;
-	border: 1px solid red;
+	//border: 1px solid red;
 }
 
 /* Mobile: Columns should span entire viewport */
@@ -384,16 +384,14 @@ hr {
 }*/
 
 @media screen and (min-width: 640px) {
-/*	.mobile-nav {
-		display: none;
-	}
-*/
 	#nav_links ul li#hamburger-nav {
 		display: none;
 	}
 
 	#nav_links ul {
 		display: inline-block;
+		border-bottom: none;
+		height: 100%;
 	}
 
 	#nav_links ul li:not(:first-child) {
@@ -408,7 +406,6 @@ hr {
 	#nav_links ul li a {
 		color: #222222;
 		margin-left: 0;
-		//padding: 0em 2em 0em 2.5em;
 		border-right: .5px solid rgba(114, 120, 120, 0.2);
 		text-decoration: none;
 		display: inline-block;
@@ -438,11 +435,11 @@ hr {
 	.col-11 {width: 91.66%;}
 	.col-12 {width: 100%;}
 
-	header {
+/*	header {
 		top: 20%;
 		width: 800px;
 		padding: 2.5em 11.25em 2.5em 11.25em;
-	}
+	}*/
 
 	.content {
 		margin-top: 0;
@@ -540,7 +537,4 @@ hr {
 }
 
 @media screen and (min-width: 992px) {
-	header {
-		width: 970px;
-	}
 }
