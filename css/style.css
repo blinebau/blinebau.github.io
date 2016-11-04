@@ -109,7 +109,7 @@ header {
 	/* Full height */
     height: 100%; 
     /* Create the parallax scrolling effect */
-    background-image: url(assets/bck-img2.jpg);
+    background-image: url(../img/bck-img2.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
