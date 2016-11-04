@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<!-- Begin HTML Here -->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Bryan Linebaugh - Portfolio</title>
+		<meta name="description" content="self portfolio">
+		<meta name="author" content="Bryan Linebaugh">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://use.fontawesome.com/aae7278461.js"></script>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+		<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+ 		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.5/jquery.scrollify.js"></script> -->
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<section data-section-name="landing-section" id="landing">
+			<header>
+				<h1 id="name">Bryan Linebaugh</h1>
+				<p id="subtitle">Developer's Portfolio</p>
+			</header>
+		</section>
+		<main>
+			<nav id="site-nav">
+				<div id="nav_links">
+					<ul>
+						<!-- *-section for scrollify TODO -->
+						<li><a href="#about">About me</a></li>
+						<li><a href="#experience">Experience</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<li id="hamburger-nav"><span style="font-size: 1em;">&#9776;</span></li>
+					</ul>
+				</div>
+			</nav>
+			<section data-section-name="about-section" class="content" id="about">
+				<h2 class="content_label"> About me </h2>
+				<hr>
+				<div class="row">
+					<div class="col-4" id="intro_brief">
+						<p><strong>I</strong> am a student of software engineering at <abbr title="University of California, Irvine">UCI</abbr>. I am interested in application level programming, and have recently began exploring web development. Learning about the intricacies and the unusual in programming is why I love computer science.</p>
+					</div>
+					<div class="col-4" id="image_center">
+						<img id="self" src="css/assets/self-img.jpg">
+					</div>
+					<div class="col-4" id="personal_brief">
+						<p><h5>Name:</h5> Bryan Linebaugh</p>
+						<p><h5>Age:</h5> 24</p>
+						<p><h5>Location:</h5> Tustin, CA</p>
+					</div>
+				</div>
+			</section>
+			<section data-section-name="experience-section" class="content" id="experience">
+				<h2 class="content_label">Experience</h2>
+				<hr>
+				<h2 style="color:#555;">Education</h2>
+				<div class="uci row">
+					<div class="col-6">
+						<h2>University of California, Irvine</h2>
+						<p>Expected Graduation Date: Spring 2017</p>
+						<p>Current GPA: 3.55</p>
+					</div>
+					<div class="edu-desc col-6">
+						<span class="degree">Bachelor in Software Engineering<i class="desc-drop fa fa-caret-right" aria-hidden="true"></i></span>
+						<p>My coursework has taken me through foundational computer science concepts, in addition to numerous perspectives on the software development process and experience working within teams on large scale projects. In general, I have taken courses relating to: data structures, algorithms, Human-Computer Interaction, software systems and design paradigms, various relevant programming languages and an overview of software development. My education has prepared me to better understand and participate development processes. For instance, I have taken course work describing design processes, test and QA processes and have future work relating requirement engineering and analysis. Future coursework: computer networking, operating systems, database systems and information retrieval.</p>
+					</div>
+				</div>
+				<div class="palomar row">
+					<div class="col-6">
+						<h2>Palomar College</h2>
+						<p>Fall 2011 - Spring 2015</p>
+						<p>Graduating GPA: 3.5</p>
+					</div>
+					<div class="edu-desc col-6">
+						<span class="degree">Associate Degree in Mathematics<i class="desc-drop fa fa-caret-right" aria-hidden="true"></i></span>
+						<p>I attended junior college in San Marcos, CA unsure of what direction I wanted to go with my life. It wasn't until my second year at college that I settled on a computer science related field to satisfy my passion for computers and understanding more about them. During my time here I was heavily invested in mathematics, physics and programming courses to help prepare me for my potential university education.
+						</p>
+					</div>
+				</div>
+				<h2 style="color:#555;">Languages & Frameworks</h2>
+				<div class="languages row">
+					<div class="col-6">
+						<ul id="language-list">
+							<li>Java</li>
+							<li>C++</li>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>Spring Framework</li>
+						</ul>
+					</div>
+					<div class="col-6">
+						<ul id="language-list">
+							<li>Javascript</li>
+							<li>JQuery</li>	
+							<li>JSON</li>
+							<li>Ruby</li>
+							<li>Ruby on Rails</li>
+							<li>SQL</li>
+						</ul>
+				</div>
+			</section>
+			<section data-section-name="projects-section" class="content" id="projects">
+				<h2 class="content_label">Projects</h2>
+				<hr>
+				<div class="projects">
+					<div class="row">
+						<div class="col-12 col-4">
+							<h3>Board Game Server</h3>
+							<span class="proj-desc">Description<i class="desc-drop fa fa-caret-right" aria-hidden="true"></i></span>
+							<div class="proj-info">
+								<P><span>Type:</span> Coursework</p>
+								<p><span>Tools Used:</span> Java, JavaFX, Java Socket Networking</p>
+								<p>This project was apart of the coursework for a software design class at <abbr tite="University of California, Irvine">UCI</abbr>. It was completed as a group assignment for the class and required groups to build a game server platform that multiple users could connect to and play against eachother. The platform we built supports Tic-Tac-Toe, Checkers and Chess, and supports multiple client connection for a multide of hosted and active games. My role in the project was creating the infrastructure for the platform by implementing the client-server programs necessary for network communication. The choice of language for the project was Java so, I utilized the Java Socket library for custom networking. This allowed for messages whether it be connection requests, commands or moves for a game to be sent through a two-way communication path between the client(s) and server programs. The server would be the recipient of messages and would make decisions or delegate moves to a client depending on the content of the request. In addition, I also was responsible for implementing GUI for the client and server applications, this included: server login and connection logging interfaces, client game lobby and manipulation of the frame resulting from click events. The result of the project was a functional client-server (multi-threaded) application that multiple clients on the same host machine can play against eachother on a handful of supported board games. The project could be adapted to allow external clients to run client programs and connect to a host machine that is running the server program.</p>
+								<a id="gameserver-btn" href="https://github.com/blinebau/inf122-game-server">Project on Github</a>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-4">
+							<h3>Exergame</h3>
+							<span class="proj-desc">Description<i class="desc-drop fa fa-caret-right" aria-hidden="true"></i></span>
+							<div class="proj-info">
+								<P><span>Type:</span> Coursework, Client Project</p>
+								<p><span>Tools Used:</span> Java, <a style="text-decoration:none;color:#555;" href="https://projects.spring.io/spring-framework/">Spring Framework <img id="spring-logo" src="spring-logo.png"></a>, <a style="text-decoration:none;color:#555;" href="https://www.mongodb.com/"> MongoDB <img id="mongodb-logo" src="mongodb-leaf.png"></a></p>
+								<p>A large-scale project that was a part of a project course that focused on human computer interaction. The details of this project were outside the scope of this course, and had heavy implementation elements involved. The project was worked on as a group with an assigned client that was met on a weekly basis to discuss project specification, current builds, issues, user requirements and etc. The project required the prototyping of a web application that would be used as a patient administration system for doctors and their leukemia patients. The application was responsible for visualizing patient data, tracking patient progress and adjusting patient histories and prescriptions. The application had to be secure as sensitive medical information between it and a medical database. My role in the project was implementing the RESTful API endpoints, data layer and security for the application. The Spring Framework was heavily used in the project to simplify Java web development requirements, in addition it offers a wide variety of projects that suited the application requirements. I used <a style="color:#555;" href="https://projects.spring.io/spring-data-mongodb">Spring Data</a> for ease of data access and modeling as well as its supporting sub-project which integrates well with MongoDB datastores, our primary datastore in this project. I used <a style="color:#555" href="https://projects.spring.io/spring-security">Spring Security</a> and its supporting authentication processes to provide secure accessing, request filter, data response and user verification for the application.</p>
+								<p id="exergame-btn">Project link not available. The project now privately belongs to the client after course conclusion.</p>
+							</div>
+						</div>
+					</div>
+					<div clas="row">
+						<div class="col-12 col-4">
+							<h3>Developer's Portfolio</h3>
+							<span class="proj-desc">Description<i class="desc-drop fa fa-caret-right" aria-hidden="true"></i></span>
+							<div class="proj-info">
+								<P><span>Type:</span> Coursework, Personal</p>
+								<p><span>Tools Used:</span> HTML, CSS, JQuery and Accompanying Libraries</p>
+								<p>The site your currently viewing is my active project I'm working on as a part of my coursework and personal interest in learning more about web development. I was inspired by several different other resume/portfolio websites that utilize a one-page design layout. It helped to imagine a vertical progression while going through the content and I attempted to design using a sectional style for each type of content. I used the <a style="color:#555" href="">Scrollify</a> JQuery plugin for progressive scrolling, section-by-section to emphasize the content layout. I look forward to continue working on this project as a learning experience and example of my capability.</p>
+								<a id="portfolio-btn" href="https://github.com/blinebau/portfolio-project">Project on Github</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div style="max-height:8em;"class="contact row">
+				<div class="col-6">
+					<h3><i class="fa fa-address-book-o" aria-hidden="true"></i> Contact</h3>
+					<p>blinebau@uci.edu</p>
+				</div>
+				<div class="col-6">
+					<a href="https://github.com/blinebau"><i class="fa fa-github" aria-hidden="true"></i> </a>
+					<a href="https://www.linkedin.com/in/bryan-linebaugh"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

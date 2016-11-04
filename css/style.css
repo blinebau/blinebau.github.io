@@ -1,11 +1,5 @@
 /* 
-Design Influenced and Inspired by Pascal Van Gemert's Interactive Resume
-http://www.pascalvangemert.nl/
-
 CSS
-
-For self-benefit separating CSS styling per selector into different rules based on intent 
-ie. (Positioning & Font-styling == Different Rules) combine later. */
 
 /* External Font from Google Fonts: Raleway */
 @import url('https://fonts.googleapis.com/css?family=Raleway');
@@ -45,7 +39,7 @@ body {
 /* Main Content Body Style */
 main {
 	display: block;
-	max-width: 61.75em;
+	max-width: 100%;
 }
 
 strong {
@@ -57,10 +51,9 @@ h1 {
 	text-align: center;
 }
 
-h3 {
+h2, h3 {
 	font-size: 1.5em;
-	font-weight: 250;
-	color: #99CC99;
+	color: #334633;
 }
 
 h5 {
@@ -71,43 +64,9 @@ i {
 	margin: 0 auto;
 }
 
-/* Content Heading Spacing */
-/*section h2 {
-	margin-top: 1em;
-	padding-top: 1em;
-}*/
-
 .content {
-/*	max-width: 50em;
-	margin: 0 auto;*/
-/*	vertical-align: text-bottom;*/
 	display: block;
 }
-
-/*#name {
-	max-width: 500px;
-	font-size: 3.5em;
-	font-weight: 600;
-	padding-bottom: 5px;
-	border-bottom: .5px solid #ffffff;
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-}
-
-#subtitle {
-	font-style: italic;
-	font-size: 1.6em;
-	font-weight: 300;
-	position: absolute;
-    top: 57%;
-    left: 50%;
-    margin-right: -50%;
-    margin-top: 5px;
-    transform: translate(-50%, -50%);
-}*/
 
 header {
 	min-width: 300px;
@@ -119,6 +78,7 @@ header {
 	margin-left: auto;
 	z-index: 5;
 	text-align: center;
+	text-shadow: 1px 1px #555;
 }
 
 #landing header #name {
@@ -149,7 +109,7 @@ header {
 	/* Full height */
     height: 100%; 
     /* Create the parallax scrolling effect */
-    background-image: url(assets/bck-img.jpg);
+    background-image: url(assets/bck-img2.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -164,61 +124,69 @@ header {
 	text-align: center;
 }
 
-/*#self {
-	max-width: 500px;
-	height: auto;
-	border-radius: 10%;
-	border: 3px solid #399932;
-	left: 50%;
-	position: absolute;
-}*/
-
 /* Content Section Label General Font Style */
 .content_label {
+	color: #405840;
 	font-size: 2.25em;
 	font-weight: 400;
-	color: #399932; /* Darker Shade of Black */
 	text-align: center;
 }
 
-/*.content_label {
-	margin-bottom: .1em;
-}*/
-
-/*#self_statement {
-	margin-top: 0;
-	padding-top: .8em;
-}*/
-
 hr { 
-	margin: 1em 3em 1.5em 3em;
+	padding-left: .5em;
 	border-color: #727878; 
-	max-width: 25em;
+	width: 85%;
 	opacity: 0.2;  
 }
 
-
-/*#self_statement {
-	text-align: center;
-	font-weight: 150;
-	font-style: italic;
-}*/
-
-/*#intro_brief {
-	width: 45%;
-	float: left;
-}*/
-
-/*#personal_brief {
-	width: 45%;
-	float: right;
-}*/
-
 #about {
 	display: block;
+	margin-top: 2em;
 	text-align: center;
-	padding: 7em 4em 0em 4em;
 /*	overflow: auto;*/
+}
+
+#experience {
+	background-color: #efefef;
+	display: block;
+	text-align: center;
+/*	overflow: auto;*/
+}
+
+.languages .col-6 {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#experience .col-4 p {
+	font-size: .8em;
+}
+
+.edu-desc {
+	text-align: center;
+}
+
+.edu-desc p {
+	display: none;
+}
+
+.edu-desc p.show {
+	display: block;
+}
+
+.edu-desc h6 {
+	text-align: center;
+	text-decoration: underline;
+}
+
+.edu-desc .degree{
+	font-weight: 900;
+	opacity: .8;
+	font-style: italic;
+}
+
+.desc-drop {
+	padding: 0em 0em 0em .5em;
 }
 
 #image_center img {
@@ -227,73 +195,127 @@ hr {
 	height: auto;
 	vertical-align: middle;
 	max-width: 125px;
-	border: 10px solid rgba(226, 226, 172, .6);
+	border: 10px solid rgba(239, 239, 239, 1);
 }
 
-#scroll-down {
-	width: 100%;
-	position: absolute;
+#projects {
 	display: block;
-	bottom: 0;
-	right: 0;
-	background-color: rgba(0, 0, 0, .45);
+	text-align: left;
+}
+
+#projects p span {
+	padding: .5em 0em .5em 0em;
+	font-weight: bold;
+}
+
+#projects .proj-info {
+	text-align: left;
+}
+
+#projects .proj-info {
+	display: none;
+}
+
+#projects .proj-info.show {
+	display: block;
+}
+
+#gameserver-btn, #portfolio-btn {
+	margin: 0 auto;
+	margin-top: 1em;
+	display: block;
+	max-width: 11em;
+	background: #99CC99;
+	background-image: -webkit-linear-gradient(top, #99CC99, #99CC99);
+	background-image: -moz-linear-gradient(top, #99CC99, #99CC99);
+	background-image: -ms-linear-gradient(top, #99CC99, #99CC99);
+	background-image: -o-linear-gradient(top, #99CC99, #99CC99);
+	background-image: linear-gradient(to bottom, #99CC99, #99CC99);
+	-webkit-border-radius: 12;
+	-moz-border-radius: 12;
+	border-radius: 12px;
+	color: #ffffff;
+	font-size: 1em;
+	font-weight: 500;
+	padding: .5em 1em .5em 1em;
+	border: 1px solid #555;
+	text-decoration: none;
 	text-align: center;
-	z-index: 10;
-}	
+}
+
+#gameserver-btn:hover, #portfolio-btn:hover {
+  background: #90bd90;
+  text-decoration: none;
+}
+
+#exergame-btn {
+	font-size: .75em;
+	font-weight: 300;
+	font-style: italic;
+	margin: 0 auto;
+	margin-top: 1em;
+}
+
+.contact {
+	bottom: 0;
+}
+
+.contact a {
+	text-decoration: none;
+}
+
+.contact a i {
+	font-size:1.5em; 
+    display: block;
+    padding-bottom: .5em;
+}
+
+#about, #experience, #projects {
+	padding: 5em 11em 2em 11em;
+}
+
+footer {
+	position: relative;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 4em;
+	padding-top: 2em;
+	background-color: #efefef;
+	text-align: center;
+}
+
+#site-nav {
+	height: 3em;
+	width: 100%;
+	z-index: 90; 
+}
 
 #nav_links {
-	height: 3em;
+	height: 100%;
 	width: 100%;
 	right: 0;
 	padding: 0em 0em 0em 0em;
 	border-bottom: 1px solid rgba(114, 120, 120, 0.2);
-	z-index: 90; 
 	text-align: center;
 	background-color: #ffffff;
 }
 
-/*.mobile-nav div {
-	position: absolute;
-	left: 100%;
-	top: 64%;
-	padding-right: 8px;
-	margin-top: -0.50em;
-	line-height: 1.2;
-	font-size: 18px;
-	font-weight: 200;
-	vertical-align: middle;
-	z-index: 99;
-}
-
-.mobile-nav span {
-	display: block;
-	width: 19px;
-	height: 3px;
-	margin: 4px 0;
-	background: rgb(0,0,0);
-	z-index: 99;
-}
-*/
-/*#nav_links ul {
-	display: none;
-}*/
-
 #nav_links ul {
+	height: 100%;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
 	background-color: #ffffff;
-	border-bottom: .5px solid rgba(0,0,0,0.2);
 }
 
-#nav_links li {
+#nav_links ul li {
 	font-size: 1.13em;
-	//height: 70px;
-	float: left;
+	float: left;	
 }
 
-#nav_links li a {
+#nav_links ul li a {
 	color: #222222;
 	padding: .6em .6em .6em .6em;
 	text-align: center;
@@ -302,11 +324,11 @@ hr {
 	display: inline-block;
 }
 
-#nav_links li:not(:first-child) {
+#nav_links ul li:not(:first-child) {
 	display: none;
 }
 
-#nav_links li#hamburger-nav {
+#nav_links ul li#hamburger-nav {
 	float: right;
 	display: inline-block;
 	margin-right: 1em;
@@ -317,32 +339,32 @@ hr {
 	position: relative;
 }
 
-#nav_links.toggle li#hamburger-nav {
+#nav_links.toggle ul {
+	height: 12em;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#nav_links.toggle ul li#hamburger-nav {
 	position: absolute;
 	right: 0;
 	top: 0;
 }
 
-#nav_links.toggle li {
+#nav_links.toggle ul li {
 	float: none;
 	display: inline;
 }
 
-#nav_links.toggle li a {
+#nav_links.toggle ul li a {
 	display: block;
 	text-align: left;
 }
 
-/*.expand {
-	display: block !important; 
-}*/
-
 /* GRID LAYOUT */
-/* Thank you W3Schools! */
+/* Credit to W3Schools for reference on Responsive Grid Building */
 
 .row {
 	width: 100%;
-	text-align: center;
 }
 
 /* Doesn't allow other elements to float into other columns */
@@ -355,8 +377,7 @@ hr {
 /* Set styling for all elements that have a class attribute containing the string "col-" */
 [class*="col-"] {
 	float: left;
-	padding: 15px;
-	//border: 1px solid red;
+	padding: .9em;
 }
 
 /* Mobile: Columns should span entire viewport */
@@ -364,129 +385,24 @@ hr {
 	width: 100%;
 }
 
-/* W3Schools Column Styling and AlineApart */
-/*.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}*/
+.content {
+	min-height: 600px;
+}
 
-/*@media screen and (min-width: 600px) {*/
-
-	/* Specifying columns and porition of screen they should be contained 
-}*/
-
-@media screen and (min-width: 640px) {
-	#nav_links ul li#hamburger-nav {
-		display: none;
-	}
-
-	#nav_links ul {
-		display: inline-block;
-		border-bottom: none;
-		height: 100%;
-	}
-
-	#nav_links ul li:not(:first-child) {
-		display: block;
-	}
-
-	#nav_links ul li {
-		font-size: 1.13em;
-		float: left;
-	}
-
-	#nav_links ul li a {
-		color: #222222;
-		margin-left: 0;
-		border-right: .5px solid rgba(114, 120, 120, 0.2);
-		text-decoration: none;
-		display: inline-block;
-	}
-
-	#nav_links ul li:first-child {
-		margin-left: -.5em;
-	}
-
-	#nav_links ul li:nth-child(4) a {
-		border-right: none;
-		margin-left: 0;
+@media screen and (max-width: 522px) {
+	#about, #experience, #projects {
+		padding: 5em 5em 2em 5em;
 	}
 }
 
 @media screen and (min-width: 768px) {
-	.col-1 {width: 8.33%;}
-	.col-2 {width: 16.66%;}
-	.col-3 {width: 25%;}
-	.col-4 {width: 33.33%;}
-	.col-5 {width: 41.66%;}
-	.col-6 {width: 50%;}
-	.col-7 {width: 58.33%;}
-	.col-8 {width: 66.66%;}
-	.col-9 {width: 75%;}
-	.col-10 {width: 83.33%;}
-	.col-11 {width: 91.66%;}
-	.col-12 {width: 100%;}
 
-/*	header {
-		top: 20%;
-		width: 800px;
-		padding: 2.5em 11.25em 2.5em 11.25em;
-	}*/
-
-	.content {
-		margin-top: 0;
+	header {
+		width: 50em;
+		padding: 0em 11.25em 2.5em 11.25em;
 	}
 
-	#landing header #name {
-		font-size: 4em;
-	}
-
-	#landing header #subtitle {
-
-	}
-/*	header {
-	min-width: 300px;
-	max-width: 100%;
-	position: relative;
-	top: 20%;
-	padding: 0em 1.25em 4em 1.25em;
-	margin-right: auto;
-	margin-left: auto;
-	z-index: 5;
-	text-align: center;
-	}
-
-	#landing header #name {
-		margin-top: 1.25em;
-		margin-bottom: .2em; 
-		padding-bottom: .4em;
-		border-bottom: .5px solid rgba(255,255,255, 0.3);
-		display: inline-block;
-		font-size: 2.25em;
-		font-weight: 600;
-	}
-
-	#landing header #subtitle {
-		margin-bottom: 1em;
-		font-size: 1.75em;
-		font-weight: 200;
-	}*/
-
-	#scroll-down {
-		height: 5em;
-		width: 8em;
-		right: 5%;
-	}
-
-	#nav_links {
+	#site-nav {
 		height: 13em;
 		width: 8em;
 		position: absolute;
@@ -497,6 +413,12 @@ hr {
 		border-bottom: 1.5px solid rgba(114, 120, 120, 0.5);
 		border-right: 1.5px solid rgba(114, 120, 120, 0.5);
 		padding: 0;
+		z-index: 90; 
+	}
+
+	#nav_links {
+		height: 100%;
+		width: 100%;
 	}
 
 	#nav_links ul {
@@ -515,11 +437,6 @@ hr {
 		border: none;
 		color: #222222;
 		text-decoration: none;
-		transition: 1s;
-	}
-
-	#nav_links ul li a:hover {
-		text-decoration: underline;
 	}
 
 	#nav_links ul > li:first-child {
@@ -534,7 +451,48 @@ hr {
 		margin-left: 0;
 		right: 0;
 	}
+
+	#nav_links ul li#hamburger-nav {
+		display: none;
+	}
+
+	#nav_links ul li:not(:first-child) {
+		display: block;
+	}
 }
 
 @media screen and (min-width: 992px) {
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (min-width: 1440px) {
+	body {
+		font-size: 1.5em;
+	}
+
+	footer {
+		display: inline-block;
+		margin-top: 2em;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 2534px) {
+	body {
+		font-size: 2.5em;
+	}
 }
