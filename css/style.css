@@ -199,8 +199,14 @@ hr {
 }
 
 #projects {
+	height: 100%;
 	display: block;
 	text-align: left;
+	overflow: auto;
+}
+
+#projects .row .col-4, .col-12 {
+	overflow: auto;
 }
 
 #projects p span {
@@ -217,7 +223,7 @@ hr {
 }
 
 #projects .proj-info.show {
-	display: block;
+	display: inline-block;
 }
 
 #gameserver-btn, #portfolio-btn {
@@ -275,10 +281,10 @@ hr {
 }
 
 footer {
-	position: relative;
+/*	position: relative;
 	right: 0;
 	bottom: 0;
-	left: 0;
+	left: 0;*/
 	padding: 4em;
 	padding-top: 2em;
 	background-color: #efefef;
@@ -391,7 +397,7 @@ footer {
 
 @media screen and (max-width: 522px) {
 	#about, #experience, #projects {
-		padding: 5em 5em 2em 5em;
+		padding: 5em 3em 2em 3em;
 	}
 }
 
