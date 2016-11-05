@@ -270,7 +270,8 @@ hr {
 	text-decoration: none;
 }
 
-.contact a i {
+.contact a i{
+	color: black;
 	font-size:1.5em; 
     display: block;
     padding-bottom: .5em;
