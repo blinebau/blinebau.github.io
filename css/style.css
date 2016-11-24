@@ -286,6 +286,7 @@ footer {
 	right: 0;
 	bottom: 0;
 	left: 0;*/
+    overflow: auto;
 	padding: 2em;
 	//padding-top: 2em;
 	background-color: #efefef;
