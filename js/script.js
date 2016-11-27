@@ -28,26 +28,36 @@ $(document).ready(function()
 	var navOffSet = $('#site-nav').offset().top;
 
 	$(window).scroll(function() {
+		if($('#nav_links').hasClass('show')) {
+			$('#nav_links').toggleClass('show');
+		}
 		if($(window).scrollTop() >= navOffSet) {
 			$('#site-nav').css({ position: 'fixed', top: '0'});
 		}
-		if($(window).scrollTop() < navOffSet) {
+		else {
 			$('#site-nav').css({ position: 'absolute', top: '100%'});
 		}
 	});
 
 	$('#hamburger-nav').on('click', function(event) {
 		event.preventDefault();
-		$('#nav_links').toggleClass('toggle');
+		$('#nav_links').toggleClass('show');
 	});
 
 	$('.degree').on('click', function(event) {
-		$(this).next().toggleClass('show');
-		$("i", this).toggleClass('fa-caret-down fa-caret-right');
+		toggleInfo(this);
 	});
 
 	$('.proj-desc').on('click', function(event) {
-		$(this).next().toggleClass('show');
-		$("i", this).toggleClass('fa-caret-down fa-caret-right');
-	})
+		toggleInfo(this);
+	});
+
+	function toggleInfo(element) {
+		if($(window).width() >= 768) {
+			$(element).next().toggleClass('hide');
+		} else {
+			$(element).next().toggleClass('show');
+		}
+		$("i", element).toggleClass('fa-caret-down fa-caret-right');
+	};
 });

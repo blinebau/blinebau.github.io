@@ -343,27 +343,27 @@ footer {
 	padding: .6em .6em .6em .6em;
 }
 
-#nav_links.toggle {
+#nav_links.show {
 	position: relative;
 }
 
-#nav_links.toggle ul {
-	height: 12em;
+#nav_links.show ul {
+	height: 15em;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-#nav_links.toggle ul li#hamburger-nav {
+#nav_links.show ul li#hamburger-nav {
 	position: absolute;
 	right: 0;
 	top: 0;
 }
 
-#nav_links.toggle ul li {
+#nav_links.show ul li {
 	float: none;
 	display: inline;
 }
 
-#nav_links.toggle ul li a {
+#nav_links.show ul li a {
 	display: block;
 	text-align: left;
 }
@@ -411,12 +411,12 @@ footer {
 	}
 
 	#site-nav {
-		height: 13em;
+		height: 20em;
 		width: 8em;
 		position: absolute;
 		display: block;
 		top: 100%;
-		right: 5%;
+		right: 3%;
 		border-left: 1.5px solid rgba(114, 120, 120, 0.5); 
 		border-bottom: 1.5px solid rgba(114, 120, 120, 0.5);
 		border-right: 1.5px solid rgba(114, 120, 120, 0.5);
@@ -436,7 +436,7 @@ footer {
 
 	#nav_links ul li{
 		float: none;
-		height: 25%;
+		height: 20%;
 	}
 
 	#nav_links ul li a {
@@ -466,6 +466,22 @@ footer {
 
 	#nav_links ul li:not(:first-child) {
 		display: block;
+	}
+
+	.edu-desc p {
+		display: block;
+	}
+
+	.edu-desc p.hide {
+		display: none;
+	}
+
+	#projects .proj-info {
+		display: inline-block;
+	}
+
+	#projects .proj-info.hide {
+		display: none;
 	}
 }
 
