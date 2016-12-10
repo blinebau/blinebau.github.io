@@ -226,7 +226,7 @@ hr {
 	display: inline-block;
 }
 
-#gameserver-btn, #portfolio-btn {
+#gameserver-btn, #portfolio-btn, #research-btn {
 	margin: 0 auto;
 	margin-top: 1em;
 	display: block;
@@ -249,9 +249,17 @@ hr {
 	text-align: center;
 }
 
-#gameserver-btn:hover, #portfolio-btn:hover {
+#gameserver-btn:hover, #portfolio-btn:hover, #research-btn:hover {
   background: #90bd90;
   text-decoration: none;
+}
+
+#btn-group {
+	margin: 0 auto;
+}
+
+#btn-group a {
+	display: inline-block;
 }
 
 #exergame-btn {
@@ -277,9 +285,9 @@ hr {
     padding-bottom: .5em;
 }
 
-#about, #experience, #projects {
+/*#about, #experience, #projects, #user-research, #user {
 	padding: 5em 11em 2em 11em;
-}
+}*/
 
 footer {
 /*	position: relative;
@@ -368,6 +376,48 @@ footer {
 	text-align: left;
 }
 
+/* User Research Specific Content Styling */
+#findings-header {
+	padding-top: 3em;
+	padding-bottom: 0;
+	text-align: center;
+}
+
+#findings-header h1 {
+	font-size: 2.25em;
+}
+
+#findings-header a {
+	text-decoration: none;
+	color: #555;
+	font-weight: 900;
+	opacity: .8;
+	margin: 0 auto;
+}
+
+#findings-header a span {
+	margin-left: .2em;
+}
+
+#research_intro {
+	margin-bottom: 1.5em;
+}
+
+.doc_info a img {
+	max-width: 100%;
+    height: auto;
+	margin-top: .5em;
+	border: 10px solid rgba(239, 239, 239, 1);
+}
+
+.doc_info a + p {
+	font-size: .8em;
+}
+
+.user_test p + a {
+	margin-right: .5em;
+}
+
 /* GRID LAYOUT */
 /* Credit to W3Schools for reference on Responsive Grid Building */
 
@@ -395,10 +445,15 @@ footer {
 
 .content {
 	min-height: 600px;
+	padding: 5em 11em 2em 11em;
 }
 
 @media screen and (max-width: 522px) {
-	#about, #experience, #projects {
+/*	#about, #experience, #projects {
+		padding: 5em 3em 2em 3em;
+	}*/
+
+	.content {
 		padding: 5em 3em 2em 3em;
 	}
 }
@@ -408,6 +463,12 @@ footer {
 	header {
 		width: 50em;
 		padding: 0em 11.25em 2.5em 11.25em;
+	}
+
+	#findings-header {
+		padding-top: 3em;
+		padding-bottom: 0;
+		text-align: center;
 	}
 
 	#site-nav {
@@ -498,6 +559,10 @@ footer {
 	.col-10 {width: 83.33%;}
 	.col-11 {width: 91.66%;}
 	.col-12 {width: 100%;}
+
+	#btn-group #portfolio-btn {
+		margin-left: 30%;
+	}
 }
 
 @media screen and (min-width: 1024px) {
